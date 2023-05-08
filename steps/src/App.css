@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.containier {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+
+.addSteps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.steps-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.TableData {
+  width: 100%;
+}
+label {
+  font-size: 12px;
+  font-weight: 500;
+}
+.workout__table {
+  height: 200px;
+}
+
+input {
+  height: 30px;
+  border: 1px black solid;
+  margin: 10px 20px 10px 0;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.ok {
+  height: 30px;
+  border: 1px black solid;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 2px 15px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.TableData {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelTableData {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.workout__table {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 20px;
+  min-height: 30px;
+}
+
+.Workout__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.btn-icons {
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn-icons:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 230, 0.9);
+  font-size: 11px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
